@@ -42,68 +42,68 @@
 
 <script src="assets/lib/jquery.min.js"></script>
 <script>
-    let ValueA=0;
-    let ValueB=0;
-    let ValueC=0;
-    let ValueD=0;
-    let ValueE=0;
-    let ValueF=0;
+    let A=0;
+    let B=0;
+    let C=0;
+    let D=0;
+    let E=0;
+    let F=0;
 
     var interval=null;
-    const letterChange1 = () =>{
-        if (ValueA<5){
-            $("h2").eq(ValueA+1).text("A");
-            ValueA++;
-            if (ValueA===5){
-                ValueA=-1;
+    const letterChange = () =>{
+        if (A<5){
+            $("h2").eq(A+1).text("A");
+            A++;
+            if (A===5){
+                A=-1;
             }
         }
 
-        if (ValueB<5){
-            $("h2").eq(ValueB+2).text("B");
-            ValueB++;
-            if (ValueB===4){
-                ValueB=-2;
+        if (B<5){
+            $("h2").eq(B+2).text("B");
+            B++;
+            if (B===4){
+                B=-2;
             }
         }
 
-        if (ValueC<5){
-            $("h2").eq(ValueC+3).text("C");
-            ValueC++;
-            if (ValueC===3){
-                ValueC=-3;
+        if (C<5){
+            $("h2").eq(C+3).text("C");
+            C++;
+            if (C===3){
+                C=-3;
             }
         }
 
-        if (ValueD<5){
-            $("h2").eq(ValueD+4).text("D");
-            ValueD++;
-            if (ValueD===2){
-                ValueD=-4;
+        if (D<5){
+            $("h2").eq(D+4).text("D");
+            D++;
+            if (D===2){
+                D=-4;
             }
         }
 
-        if (ValueE<5){
-            $("h2").eq(ValueE+5).text("E");
-            ValueE++;
-            if (ValueE===1){
-                ValueE=-5;
+        if (E<5){
+            $("h2").eq(E+5).text("E");
+            E++;
+            if (E===1){
+                E=-5;
             }
         }
 
-        if (ValueF<6){
-            $("h2").eq(ValueF).text("F");
-            ValueF++;
-            if (ValueF===6){
-                ValueF=-6;
+        if (F<6){
+            $("h2").eq(F).text("F");
+            F++;
+            if (F===6){
+                F=-6;
             }
-            console.log(ValueF)
+            console.log(F)
         }
     }
 
     $("button").eq(0).on('click', () => {
         if (interval===null) {
-            interval = setInterval(letterChange1, 1500);
+            interval = setInterval(letterChange, 1500);
         }
     });
 
